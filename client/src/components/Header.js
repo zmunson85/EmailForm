@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
     return (
         <header>
-            <h1>Enquiry Form</h1>
+            <h1>Drop Your Info Below, We will reach out shortly!</h1>
         </header>
     );
 };
