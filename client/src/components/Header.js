@@ -3,7 +3,10 @@ import React from 'react'
 const Header = () => {
     return (
         <header>
-            <h1>Drop Your Info Below, We will reach out shortly!</h1>
+            <h1>NodeMailer App--Testing. </h1>
+
+
+
         </header>
     );
 };

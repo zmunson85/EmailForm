@@ -1,5 +1,5 @@
 body {
-  background: #7877e6;
+  background: #1c83e4;
   color: #fff;
   letter-spacing: 1px;
 }
@@ -15,4 +15,20 @@ header {
 
 .error {
   color: #960303;
+}
+
+.login {
+  position: absolute;
+  left: 2ex;
+  color: red;
+}
+footer {
+  margin-top: 5%;
+  color: black;
+  font-size: 18px;
+  width: 100%;
+}
+
+.sub {
+  margin-top: 2%;
 }

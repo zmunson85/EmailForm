@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Form, Button } from 'react-bootstrap';
 
+
+
 const ContactForm = () => {
     const [state, setState] = useState({
         name: '',
@@ -58,6 +60,7 @@ const ContactForm = () => {
                         value={state.name}
                         placeholder="Enter your full name"
                         onChange={onInputChange}
+                        required='Please enter your first and last name'
                     />
                 </Form.Group>
                 <Form.Group controlId="email">
@@ -66,8 +69,9 @@ const ContactForm = () => {
                         type="text"
                         name="email"
                         value={state.email}
-                        placeholder="Enter your email"
+                        placeholder="Testing Purposes only, you can enter a fake email"
                         onChange={onInputChange}
+                        required='You provide your email'
                     />
                 </Form.Group>
                 <Form.Group controlId="subject">
@@ -78,6 +82,7 @@ const ContactForm = () => {
                         value={state.subject}
                         placeholder="Enter subject"
                         onChange={onInputChange}
+                        required='please add a message'
                     />
                 </Form.Group>
                 <Form.Group controlId="subject">
@@ -87,14 +92,17 @@ const ContactForm = () => {
                         name="message"
                         value={state.message}
                         rows="3"
-                        placeholder="Enter your message"
+                        placeholder="optional: Enter a message"
                         onChange={onInputChange}
+
                     />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button className="sub" variant="success" type="submit">
                     Submit
                 </Button>
             </form>
+
+            <footer>Thank you for Visiting, if you choose to provide an email, we will not use it for anything other than testing purposes, you can simply provide a fake email, it is not testing for a valid email, just testing to see if a form submission will transmit the new contact info via email, and NPM: nodemailer</footer>
         </div>
     );
 };
